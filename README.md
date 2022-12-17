@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HENRY CHALLENGE - JavaScript
 
 ### Bienvenido al Henry Challenge sobre JavaScript para la carrera Full Stack Developer.
@@ -105,3 +106,7 @@ Para identificar el error, vas a tener que leerlo en la consola.
 * La consola se tilda en `Runs`:
     1. Revisa tu código, tenes un bucle infinito. Tenes que checkear la condición de corte de tus bucles.
 
+=======
+# checkpoint-soyhenry-org-2022-12-17
+Examen de ingreso al boot camp de programación full Stack Soy Henry.
+>>>>>>> d9cc7af8fd5464d41d9413984b1b4091f4994ffd
