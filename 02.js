@@ -35,8 +35,7 @@ function cuantosOnline(usuarios) {
 
   for (let clave in usuarios){
     if (usuarios[clave].online == true){
-      counter = counter + 1;
-      
+      counter = counter + 1;    
     }
   }
   return counter;

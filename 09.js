@@ -13,9 +13,6 @@ function repetirCaracteres() {
 
   // Tu código aca:
   
-  
-  var counter = 0;
-  
   String.prototype.repeatCharacters = function(){
     var other = "";
     for(var i = 0; i < this.length; i++){

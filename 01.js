@@ -17,7 +17,7 @@ function menorMayor(numeros) {
   var newArray= [];
   var mayor = 0;
   var menor = 1;
-  
+
   for (var i = 0; i < numeros.length; i++){
     if (mayor < numeros[i]){
       mayor = numeros[i];
@@ -26,9 +26,7 @@ function menorMayor(numeros) {
       menor = numeros[i];
     }
   }
-  //newArray.unshift(menor);
   newArray.push(menor,mayor);
-  
   return newArray;
 }
 
