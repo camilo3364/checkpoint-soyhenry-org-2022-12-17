@@ -11,7 +11,18 @@ function palabraMasLarga(array) {
   // palabraMasLarga(['hola esto string', 'frase con palabra']) debe devolver 'palabra'
 
   // Tu código aca:
+  var palabra = [];
+  var newWord = "";
 
+  for (var i = 0; i < array.length; i++){
+    palabra = array[i].split(" ");
+    for(var j = 0; j < palabra.length; j++){
+      if(palabra[j].length > newWord.length){
+        newWord = palabra[j];
+      }
+    }
+  }
+  return newWord;
 }
 
 // No modifiques nada debajo de esta linea //

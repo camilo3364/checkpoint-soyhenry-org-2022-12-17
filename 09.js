@@ -12,9 +12,19 @@ function repetirCaracteres() {
   // 'hola'.repeatCharacters() devuelve "hhoollaa"
 
   // Tu código aca:
-
+  
+  
+  var counter = 0;
+  
+  String.prototype.repeatCharacters = function(){
+    var other = "";
+    for(var i = 0; i < this.length; i++){
+      other = other + this[i] + this[i];
+    }
+    return other;
 }
 
+}
 // No modifiques nada debajo de esta linea //
 
 module.exports = repetirCaracteres

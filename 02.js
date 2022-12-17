@@ -31,7 +31,16 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
+  var counter = 0;
 
+  for (let clave in usuarios){
+    if (usuarios[clave].online == true){
+      counter = counter + 1;
+      
+    }
+  }
+  return counter;
+  
 }
 
 

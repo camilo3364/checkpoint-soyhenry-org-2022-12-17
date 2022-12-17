@@ -11,6 +11,10 @@ function crearClaseEmprendedor() {
           // Inicializar las propiedades del emprendedor con los valores recibidos como argumento
 
           // Tu código aca:
+          this.nombre = nombre;
+          this.apellido = apellido;
+          this.libros = libros;
+          this.mascotas = mascotas;
 
       }
 
@@ -19,6 +23,7 @@ function crearClaseEmprendedor() {
         // no debe retornar nada.
 
         // Tu código aca:
+        this.mascotas.push(mascota);
 
       }
 
@@ -29,6 +34,13 @@ function crearClaseEmprendedor() {
           // emprendedor.getMascotas() debería devolver 2
 
           // Tu código aca:
+          var counter = 0;
+          for(var i = 0; i < this.mascotas.length; i++){
+            if(this.mascotas[i] != ""){
+              counter = counter + 1;
+            }
+          }
+          return counter;
 
       }
 
@@ -38,6 +50,11 @@ function crearClaseEmprendedor() {
           // No debe retornar nada.
 
           // Tu código aca:
+          var objeto ={
+            nombre: book,
+            autor: autor,
+          }
+          this.libros.push(objeto);
 
       }
 
@@ -48,6 +65,8 @@ function crearClaseEmprendedor() {
           // emprendedor.getBooks() debería devolver ['El señor de las moscas', 'Fundacion']
 
           // Tu código aca:
+          var books = (this.libros).map((x) => x.nombre);
+          return books;
 
       }
 
@@ -58,6 +77,7 @@ function crearClaseEmprendedor() {
           // emprendedor.getFullName() deberia devolver 'Elon Musk'
 
           // Tu código aca:
+          return this.nombre + " " + this.apellido;
 
       }
   }
